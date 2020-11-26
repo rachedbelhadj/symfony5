@@ -1,4 +1,4 @@
-FormaStore
+Symfony + Nginx + MySql + Elasticsearch + Kibana
 ==============
 
 
@@ -7,7 +7,7 @@ FormaStore
 First, clone this repository:
 
 ```bash
-$ git clone git@github.com:rachedbelhadj/formastore.git
+$ git clone git@github.com:rachedbelhadj/symfony5.git
 ```
 
 ```bash
