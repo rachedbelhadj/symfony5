@@ -89,3 +89,6 @@ $ make docker-dev-start
 ```bash
 $ make docker-doctrine-schema-update
 ```
+
+## Integrate Travis
+
