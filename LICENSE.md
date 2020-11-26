@@ -1,6 +1,6 @@
 ## 0BSD license
 
-Copyright (C) 2006 by Rob Landley <rob@landley.net>
+Copyright (C) 2020 by Rached BELHADJ <belhadj.rached@gmail.com>
 
 Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted.
 
