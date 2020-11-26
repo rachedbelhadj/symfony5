@@ -29,19 +29,22 @@ docker-dev-clear-cache:
 docker-dev-reload-data:
 	docker-compose exec php make reload-data
 
+docker-doctrine-schema-update:
+	docker-compose exec php make doctrine-schema-update
+
 docker-dev-clean-cache:
 	docker-compose exec php make clean-cache
 
 #fixtures:
 #	php bin/console doctrine:fixtures:load
 
-database:
+doctrine-schema-update:
 	php bin/console doctrine:schema:update --force
 
 clean-cache:
 	if [ -d /var/cache ]; then rm -rf var/cache; fi
 
-reload-data: clean-cache database
+reload-data: clean-cache doctrine-schema-update
 
 docker-dev-composer-update:
 	docker-compose exec php make composer-update

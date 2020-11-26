@@ -1,4 +1,4 @@
-Symfony + Nginx + MySql + Elasticsearch + Kibana 
+FormaStore
 ==============
 
 
@@ -7,7 +7,7 @@ Symfony + Nginx + MySql + Elasticsearch + Kibana
 First, clone this repository:
 
 ```bash
-$ git clone git@github.com:rachedbelhadj/symfony5.git
+$ git clone git@github.com:rachedbelhadj/formastore.git
 ```
 
 ```bash
@@ -69,3 +69,23 @@ You can also use Kibana to visualize Nginx & Symfony logs by visiting:
 Configure your IDE to use port 5902 for XDebug.
 Docker versions below 18.03.1 don't support the Docker variable `host.docker.internal`.  
 In that case you'd have to swap out `host.docker.internal` with your machine IP address in php-fpm/xdebug.ini.
+
+### Use simple commands 
+
+##### Clear cache
+
+```bash
+$ make docker-dev-clean-cache
+```
+
+##### Restart containers
+
+```bash
+$ make docker-dev-start
+```
+
+##### Doctrine schema update
+
+```bash
+$ make docker-doctrine-schema-update
+```
