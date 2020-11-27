@@ -1,6 +1,7 @@
 Symfony + Nginx + MySql + Elasticsearch + Kibana
 ==============
 
+[![Build Status](https://travis-ci.org/rachedbelhadj/symfony5.svg?branch=master)](https://travis-ci.org/rachedbelhadj/symfony5)
 
 ## Installation
 
@@ -89,6 +90,3 @@ $ make docker-dev-start
 ```bash
 $ make docker-doctrine-schema-update
 ```
-
-## Integrate Travis
-
